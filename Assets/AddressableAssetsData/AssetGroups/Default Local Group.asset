@@ -104,6 +104,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Map_NewAx
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fda8693acdbe75648906971f7e682ab2
+    m_Address: Assets/Bundles/Enemies/Commons/Prefabs/Zombie_Base.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Zombie_Base_Common
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f2b2b8b01fe26042b6c7bda66a77a41
+    m_Address: Assets/Bundles/Enemies/Default/Zombie_Base Variant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Zombie_Base_Default
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 2fa62781d98eb264aa388c269f5217dc, type: 2}
   m_SchemaSet:
