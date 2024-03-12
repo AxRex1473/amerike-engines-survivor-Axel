@@ -104,17 +104,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - Map_NewAx
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fda8693acdbe75648906971f7e682ab2
+  - m_GUID: b68fc3c95a10b2e4385240c159832936
+    m_Address: Assets/Bundles/Enemies/Default
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Zombie_Default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c8858d80d33eb74cb307293226483fd
+    m_Address: Assets/Bundles/Enemies/Commons
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Zombie_Base
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2b7662f8ef3fee4693e5029c6310882
     m_Address: Assets/Bundles/Enemies/Commons/Prefabs/Zombie_Base.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Zombie_Base_Common
+    - Zombie_Base
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1f2b2b8b01fe26042b6c7bda66a77a41
-    m_Address: Assets/Bundles/Enemies/Default/Zombie_Base Variant.prefab
+  - m_GUID: 4497298b05e03944a84ec1de690425b2
+    m_Address: Assets/Bundles/Enemies/Default/Zombie_Default.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Zombie_Base_Default
+    - Zombie_Default
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 2fa62781d98eb264aa388c269f5217dc, type: 2}

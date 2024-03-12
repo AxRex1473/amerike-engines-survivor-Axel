@@ -25,5 +25,6 @@ public class PlayerView : MonoBehaviour, IPlayerView
     {
         _direction = ctx.ReadValue<Vector2>();
     }
+
     private void TranslateAllDirections(Vector2 axis) => transform.Translate(axis * Time.deltaTime * _MovementSpeed);
 }
