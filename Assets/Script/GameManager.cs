@@ -31,7 +31,8 @@ public class GameManager : MonoBehaviour
         var MapView = await AdresableLoader.InstantiateAsync<IMapView>("Map_NewAx");
         var playerView = await AdresableLoader.InstantiateAsync<IPlayerView>("Player_Default");
         IPlayerController playerController = new PlayerController(playerView);
+
         var enmeyView = await AdresableLoader.InstantiateAsync<IZombieView>("Zombie_Default");
-        IZombieController zombieController = new ZombieController(enmeyView);
+        IZombieController zombieController = new ZombieController(enmeyView, playerView);
     }
 }
