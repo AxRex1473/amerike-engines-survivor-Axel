@@ -6,14 +6,21 @@ namespace Enemies.Views
     public class ZombieView : MonoBehaviour, IZombieView
     {
         [SerializeField] private float _moveSpeed;
-        [SerializeField] private IntBinding State;
+        [SerializeField] private IntBinding _state;
         [SerializeField] private SpriteRenderer spriteRenderer;
-
-        public float MoveSpeed => _moveSpeed;
 
         public Transform Transform => transform;
 
-        public bool FlipSprite { get => spriteRenderer.flipX; set => spriteRenderer.flipX = value; }
+        public int State
+        {
+            set => _state.Value = value;
+        }
 
+        public int state => throw new System.NotImplementedException();
+
+        public bool FlipX { set => spriteRenderer.flipX = value; }
+
+        public float MoveSpeed => _moveSpeed;
+        public GameObject GameObject => gameObject;
     }
 }

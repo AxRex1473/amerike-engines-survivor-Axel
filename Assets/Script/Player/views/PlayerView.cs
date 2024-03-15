@@ -11,15 +11,25 @@ public class PlayerView : MonoBehaviour, IPlayerView
     [SerializeField] private float _MovementSpeed;
     [SerializeField] private PlayerInput _PlayerInput;
     [SerializeField] private SpriteRenderer _SpriteRenderer;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Transform _spawnerAnchor;
     private Vector2 _direction;
     [SerializeField] private IntBinding _moveBinding;
 
     public Vector2 Direction => _direction;
     public Transform Transform => transform;
     public float MoveSpeed => _MovementSpeed;
-    public bool FlipSprite { get => _SpriteRenderer.flipX; set => _SpriteRenderer.flipX = value; }
-    public int MoveState { set => _moveBinding.Value = value; }
+    public bool FlipSprite 
+    { 
+        get => _SpriteRenderer.flipX; 
+        set => _SpriteRenderer.flipX = value; 
+    }
+
+    public int MoveState 
+    { 
+        set => _moveBinding.Value = value; 
+    }
+
+    public Transform SpawnerAnchor => _spawnerAnchor;
 
     public void SetDirection(InputAction.CallbackContext ctx)
     {

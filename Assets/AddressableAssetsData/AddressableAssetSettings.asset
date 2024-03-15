@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: b53c42095939f2047940e67d2882e574
   m_currentHash:
     serializedVersion: 2
-    Hash: e99e9012b001dd0e5f3b8eb8ea33fe7a
+    Hash: e12cd39c12ab284e14e11cfd47fde75a
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -95,6 +95,8 @@ MonoBehaviour:
     - Zombie_Base_Default
     - Zombie_Base
     - Zombie_Default
+    - enemiesSpawnerBase
+    - enemiesSpawnerDefault
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 54b3a7cdc3867c844aeb09b117da8a04, type: 2}

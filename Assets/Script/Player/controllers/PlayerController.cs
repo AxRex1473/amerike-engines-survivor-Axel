@@ -1,17 +1,31 @@
 using Cysharp.Threading.Tasks;
+using Enemies.Controller;
+using Enemies.Controllers;
+using Enemies.Views;
 using Player.views;
 using UnityEngine;
+using Utils.AdresableLoader;
 
 namespace Player.controllers
 {
     public class PlayerController : IPlayerController
     {
         private IPlayerView _playerView;
+        private IEnemiesSpawnerController enemiesSpawnerController;
+
         public PlayerController(IPlayerView playerView)
         {
             _playerView = playerView;
 
             StartMovementCycle().Forget();
+            LoadEnemiesSpawner().Forget();
+        }
+
+        private async UniTaskVoid  LoadEnemiesSpawner()
+        {
+            var enemiesSpawnerView = await AdresableLoader.InstantiateAsync<IEnemiesSpawnerView>("enemiesSpawnerDefault", _playerView.SpawnerAnchor);
+            enemiesSpawnerController = new EnemiesSpawnerController(enemiesSpawnerView, _playerView);
+
         }
 
         private async UniTask StartMovementCycle()

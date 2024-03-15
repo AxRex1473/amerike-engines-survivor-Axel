@@ -23,9 +23,6 @@ namespace DefaultNamespace
 
             var playerView = await AdresableLoader.InstantiateAsync<IPlayerView>("Player_Default");
             IPlayerController playerController = new PlayerController(playerView);
-
-            var enemyView = await AdresableLoader.InstantiateAsync<IZombieView>("Zombie_Default");
-            IZombieController zombieController = new ZombieController(enemyView, playerView);
         }
     }
 }

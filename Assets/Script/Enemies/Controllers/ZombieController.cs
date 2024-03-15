@@ -29,7 +29,7 @@ namespace Enemies.Controllers
                 direction.Normalize();
                 float playerDirection = Mathf.Sign(direction.x);
 
-                zombieView.FlipSprite = (playerDirection < 0);
+                zombieView.FlipX = (playerDirection < 0);
 
                 zombieView.Transform.position = Vector2.MoveTowards(zombieView.Transform.position,playerPosition,zombieView.MoveSpeed * Time.deltaTime);
                 await UniTask.DelayFrame(1);

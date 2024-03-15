@@ -6,8 +6,10 @@ namespace Enemies.Views
 {
     public interface IZombieView
     {
-        float MoveSpeed { get; }
         Transform Transform { get; }
-        bool FlipSprite { get; set; }
+        int state { get; }
+        bool FlipX { set; }
+        float MoveSpeed { get; }
+        GameObject GameObject { get; }
     }
 }
