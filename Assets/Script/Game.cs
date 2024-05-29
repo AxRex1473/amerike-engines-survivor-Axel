@@ -1,6 +1,7 @@
+using System;
+using AudioChannel.Controllers;
+using AudioChannel.Views;
 using Cysharp.Threading.Tasks;
-using Enemies.Controllers;
-using Enemies.Views;
 using Map.controllers;
 using Map.views;
 using Player.controllers;
@@ -13,7 +14,7 @@ namespace DefaultNamespace
     {
         public Game()
         {
-            
+
         }
 
         public async UniTaskVoid CreateLevel()
@@ -24,5 +25,5 @@ namespace DefaultNamespace
             var playerView = await AdresableLoader.InstantiateAsync<IPlayerView>("Player_Default");
             IPlayerController playerController = new PlayerController(playerView);
         }
-    }
+    } 
 }

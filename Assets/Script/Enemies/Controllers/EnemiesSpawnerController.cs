@@ -32,7 +32,7 @@ namespace Enemies.Controllers
 
             _zombiePool = new ObjectPool<GameObject>(CreatePooledItem, OnTakedFromPool, OnReturnedPool, OnDestroyPoolObject , true, 10, PoolSize);
 
-            for (int i = 0; i > 10; i++) 
+            for (int i = 0; i < 10; i++) 
             {
                 _zombiePool.Get();
             }

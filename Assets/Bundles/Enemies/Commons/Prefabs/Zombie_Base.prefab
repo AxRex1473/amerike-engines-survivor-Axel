@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2
-  State:
+  _state:
     m_PersistentCalls:
       m_Calls: []
-    animator: {fileID: 4907499466111702749}
-    parameter: State
+    animator: {fileID: 0}
+    parameter: 
   spriteRenderer: {fileID: 488211307389986437}

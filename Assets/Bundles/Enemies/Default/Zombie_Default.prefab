@@ -50,7 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078959905685641333, guid: a2b7662f8ef3fee4693e5029c6310882, type: 3}
       propertyPath: m_Name
-      value: Zombie_Base
+      value: Zombie_Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078959905685641333, guid: a2b7662f8ef3fee4693e5029c6310882, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
